@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белмарке</title>
+    <link rel="stylesheet" href="style.css" />  
+    <link href="14.jpg" rel="icon" type="image/x-icon"/>
+    
+</head>
+<body>
+        <div class="wrapper">
+            <div class="content"> 
+                <div class="hi">
+                    <div class="container">
+                        <div class="hi_row">    
+                            <div class="hi_image">
+                                <img src="logo-belmarket.png" style="width:300px" style="height:250px" width="1500">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="body1">
+            <div class="container">
+                <div class="body_row">
+                    <div class="Nav">
+                        <div>
+                            <a href="index.html">
+                                <button class="fearst_button">Главная</button>
+                            </a>
+                            <form action="result.html">
+                                <!-- исправть fotm на a  -->
+                                <button class="sheart_button">Результат</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="Article">
+                        <h1>Опрос посетителей магазина</h1>
+                        <form id ='form' action="#" method="get" enctype="multipart/form-data">
+                            <div class="ask1">
+                            <div>
+                                <p><input type="text" name="name" value="" placeholder="Имя" /></p>
+                            </div>
+                            <div >
+                                <p><input type="text" name="fio" value="" placeholder="Фамилия" /></p>
+                            </div>
+                            <div >
+                                <p><input type="datetime-local" name="time" value=""  /></p>
+                            </div>
+                            <div>
+                                <p>Какие продукты вы покупаете у нас чаще всего?</p>
+                                <p><input type="checkbox" name="products" value="овощи" />овощи</p>
+                                <p><input type="checkbox" name="products" value="фрукты" />фрукты</p>
+                                <p><input type="checkbox" name="products" value="крупы" />крупы</p>
+                                <p><input type="checkbox" name="products" value="молочные продукты" />молочные продукты</p>
+                                <p><input type="checkbox" name="products" value="выпечка" />выпечка</p>
+                                <p><input type="checkbox" name="products" value="сладости" />сладости</p>
+                            </div>
+                            <div>
+                                <p>Адрес магазина, который вы посещаете:</p>
+                                <select name="adres">
+                                    <option value="пр-т. Победителей 89к1">пр-т. Победителей 89к1</option>
+                                    <option value="ул. Воронянского 58">ул. Воронянского 58 </option>
+                                    <option value="Логойский тракт 7">Логойский тракт 7</option>
+                                    <option value="ТРЦ Galileo, ул. Бобруйская 6">ТРЦ Galileo, ул. Бобруйская 6</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="ask2">
+
+                                <div>
+                                    <p>Нравиться ли вам облуживание в нашем магазине?</p>
+                                    <p><input  checked type="radio" name="survey" value="да" />да</p>
+                                    <p><input type="radio" name="survey" value="нет" />нет</p>
+                                    <p><input type="radio" name="survey" value="затрудняюсь ответить" />затрудняюсь ответить</p>
+
+                                </div>
+                                <div>
+                                    <p>Сколько раз вы посещаете наш магазин в неделю?</p>
+                                    <p><input type="number" name="your_number" value="" placeholder="количество"/></p>
+                                </div>
+                                <div class="button">
+
+                                    <div>
+                                        <button type="submit" id="submit">Отправить</button>
+                                        <button type="reset">Отменить</button>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <aside class="Aside">
+                        <!-- <h3>Новые Товары</h3>
+                        <div class="img_my">
+                            <img src="9.jpg" class="aside_img">
+                        </div>    
+                        <div>
+                            <p>Основные характеристики</p>
+                            <p><font style="size: 10px; font-family: 'Times New Roman', Times, serif;">Исполнение:  Отдельностоящая<br>
+                            Тип:  Микроволны (Соло)<br>
+                            Объем микроволновой печи:  23 л<br>
+                            Внутреннее покрытие стенок:  Биокерамика<br>
+                            Диаметр тарелки:  288 мм<br>
+                            Мощность микроволнового излучателя:  800 Вт</font></p>
+                            <p>
+                                <font style="size: 26px; font-family: 'Times New Roman', Times, serif;">Цена: 
+                                    <font style="color: red;">350</font>ㅤБр
+                                </font> -->
+                            <!-- </p>
+                        </div> -->
+                    </aside>
+                </div>    
+            </div>
+        </div>    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_text">Супермаркет года 2022
+                        <div class="footer_text_li"> 
+                            <ul>
+                                <li>+1 (123) 456-7890</li>
+                                <li>@sosedi.by</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

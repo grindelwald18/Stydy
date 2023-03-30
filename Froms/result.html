@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белмарке</title>
+    <link rel="stylesheet" href="style.css" />  
+    <link href="14.jpg" rel="icon" type="image/x-icon"/>
+    <script>
+        window.onload=()=>{
+            const inputs = document.querySelectorAll('input');
+            for(const input of inputs){
+                input.value = localStorage[`input_${input.name}`] || '';
+                input.addEventListener('change', function(){
+                    localStorage[`input_${this.name}`] = this.value;
+                });
+            }
+        };
+    </script>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="content">
+                <div class="hi">
+                    <div class="container">
+                        <div class="hi_row">    
+                            <div class="hi_image">
+                                <img src="logo-belmarket.png" style="width:300px" style="height:250px" width="1500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="body1">
+            <div class="container">
+                <div class="body_row">
+                    <div class="Nav">
+                        <div>
+                            <form action="index.html">
+                                <button class="fearst_button">Главная</button>
+                            </form>
+                            <form action="result.html">
+                                <button class="sheart_button">Результат</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="Article">
+                        <h1>Результат опрос посетителей магазина</h1>
+                        <div class="name">
+                            <table id='table'>
+                                <tr>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Виды товаров</th>
+                                    <th>Адрес магазина</th>
+                                    <th>Нравиться ли вам облуживание</th>
+                                    <th>Количество посещений</th>
+                                </tr>
+                            </table>
+                            <button type="button" id="button_clear">Очистить</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_text">Супермаркет года 2022
+                        <div class="footer_text_li"> 
+                            <ul>
+                                <li>+1 (123) 456-7890</li>
+                                <li>@sosedi.by</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
